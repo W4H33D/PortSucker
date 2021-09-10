@@ -15,3 +15,5 @@ d = "Hello World" # Data Type = This is also a String Data Type
 
 print(" Data Type = int:",a,"\n Data Type = float:",b,"\n Data Type = string:",c,"\n Data Type = String:",d)
 ```
+After execution the output would like this 
+![image](https://user-images.githubusercontent.com/85181215/132871662-21989e27-35df-4645-baa2-828ece02aba0.png)
