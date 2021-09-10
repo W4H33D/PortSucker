@@ -1,6 +1,6 @@
 # Data Types
 
-Here we made a program that print four data types of python
+Here we made a program that print all data types of python
 
 ```
 #!/usr/bin/python3
