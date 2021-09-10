@@ -5,16 +5,27 @@ Here we made a program that print four data types of python
 ```
 #!/usr/bin/python3
 
-a = 10  # Data Type = int
+integers = 10  # Data Type = int ## Whole numbers,such as: 3 300 200
 
-b = 10.1 # Data Type = float
+floating_point = 10.1 # Data Type = float ## Numbers with a decimal point: 2.3 4.6 100.0
 
-c = 'Hello' # Data Type = string
+string = 'Hello' # Data Type = str ## Ordered sequence of characters: "hello" or 'hello'
 
-d = "Hello World" # Data Type = This is also a String Data Type
+string_also = "Hello world"
 
-print(" Data Type = int:",a,"\n Data Type = float:",b,"\n Data Type = string:",c,"\n Data Type = String:",d)
+lists = [10,"hello",200.3] # Data Type = list ## ordered sequence of objects: [10,"hello",100.3]
+
+dictionary = {"hello":"world","number":"1"} # Data Type = dict ## unordered Key:Value pair: {"mykey":"value","name":"Joe"}
+
+tuples = (10,"hello",200.1) # Data Type = tup ## Ordered ummutable sequence of objects: (10,"hello",100.3)
+
+sets = {"a":"b"} # Data Type = set ## Unordered collections of unique objects: {"a","10"}
+
+booleans = True # Data Type = bool ## Logical value indicating True or False
+
+print("This is integer:",integers,"\nThis is Floating Point:",floating_point,"\n This is String:",string,string_also,"\nThis is List:",lists,"\nThis is dictioary:",dictionary,"\nThis is Tuples:",tuples,"\nThis is Sets:",sets,"\nThis is boolien:",booleans)
 ```
 After execution the output would like this 
 
-![image](https://user-images.githubusercontent.com/85181215/132871662-21989e27-35df-4645-baa2-828ece02aba0.png)
+![image](https://user-images.githubusercontent.com/85181215/132876991-3e38ca2f-8f92-40d6-a77a-8cd88070b6b2.png)
+
