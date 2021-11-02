@@ -13,4 +13,8 @@ scan open ports.
 ## Installation
 
 This tool is an **Python Script** so you just have to download the script make him executable and they are ready to serve you.
-the only thing you have to make sure you have all the required libraries install to make the script work.
+the only thing you have to make sure you have all the required libraries install to make the script work properly.
+To install the libraries you can use the following command
+```
+
+```
