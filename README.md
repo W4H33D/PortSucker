@@ -1,5 +1,7 @@
-# Python_Journey
+# PenTesting With Python
 
-This is Start of My python journey and my coding advantures!
+To Speed Up our Penetration Testing We have To know how to automate our task so to do that we can use any programing languages but first we have to know the basic of that language after that we can search/learn how to use different libraries that are usefull in penetration testing to automate our task.They include how to make a connection,how to make a web request etc.
+So when we learn that we can try to make a simple Penetration Testing Tools.To follow that Here's is my Pentesting with Python Repositories here i will try to build Pentesting Tools Using Python.
 
-So stay tuned for this with me 
+Hope You Like it.
+Thank You 
