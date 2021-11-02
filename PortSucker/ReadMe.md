@@ -47,8 +47,4 @@ This also give us to specify multiple Targets to do that we just have to separat
 $ python3 PortSucker.py 192.168.10.1,www.example.com,10.10.10.10 1 100
 ```
 
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/85181215/139909525-8f1fc4d5-2069-423c-825e-297bcfddd56b.png)
