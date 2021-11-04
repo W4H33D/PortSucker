@@ -12,9 +12,15 @@ scan open ports.
 
 ## Installation
 
-This tool is an **Python Script** so you just have to download the script make him executable and they are ready to serve you.
-the only thing you have to make sure you have all the required libraries install to make the script work properly.
-
+> - Download the Project
+> After Downloading install the requirments using the following command
+```
+pip3 install -r requirments.txt
+```
+> This will download all the requirments for this tool and now you are good to go use this tool
+```
+$ python3 PortSucker.py
+```
 
 ## Usage
 
