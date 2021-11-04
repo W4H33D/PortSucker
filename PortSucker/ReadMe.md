@@ -5,10 +5,9 @@
 ------
 ## Description:
 
-Port Sucker is an Port Scanning Tool That will use to find open port of the target system/computer.
+Port Sucker is a Port Scanning Tool That will use to find open port of the target system/computer.
 This is a fast Port Scanning tool that will show you all open port as soon as posible. The time
-depends on the target system how far they are the longer the distance the loger they take time to 
-scan open ports.
+depends on the target system distance and connection speed but they will provide you best result as they can
 
 ## Installation
 
