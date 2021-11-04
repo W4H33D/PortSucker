@@ -17,7 +17,7 @@ scan open ports.
 ```
 pip3 install -r requirments.txt
 ```
-> This will download all the requirments for this tool and now you are good to go use this tool
+> This will download all the requirments for this tool and now you are good to go for use this tool
 ```
 $ python3 PortSucker.py
 ```
