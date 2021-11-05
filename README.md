@@ -23,8 +23,7 @@ $ python3 PortSucker.py
 
 ## Usage
 
-To use PortSucker you have to download the script first and make sure all the requirement is satisfied after that you have to
-you can run the script with the following command.
+To use PortSucker you have to download the script first and make sure all the requirement is satisfied after that you can run the script with the following command.
 ```
 $ python3 portSucker.py
 ```
