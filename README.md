@@ -46,7 +46,7 @@ $ python3 PortSucker.py 192.168.10.1 1 100
 $ python3 PortSucker.py www.example.com 1 100
 
 ```
-This also give us to specify multiple Targets to do that we just have to separate other targets by **Comma(,) Like follows
+This also give us ability to specify multiple Targets and scan to do that we just have to separate other targets by **Comma(,) Like follows
 ```
 $ python3 PortSucker.py 192.168.10.1,www.example.com,10.10.10.10 1 100
 ```
