@@ -29,9 +29,7 @@ $ python3 portSucker.py
 ```
 If every thing write this will show you the syntax how to specify data to the the tool like follows
 
-![image](https://user-images.githubusercontent.com/85181215/141141058-eb822d65-87c6-4167-bdd4-131719ccef49.png)
-
-<!--![image](https://user-images.githubusercontent.com/85181215/141125817-21ad95c8-e28a-45f4-bd38-4b7b376f2a9c.png)-->
+![image](https://user-images.githubusercontent.com/85181215/141125817-21ad95c8-e28a-45f4-bd38-4b7b376f2a9c.png)
 
 <!----![image](https://user-images.githubusercontent.com/85181215/139906965-c7390169-0ed3-4148-a4e6-b68ab3321607.png) -->
 
@@ -58,6 +56,7 @@ This also give us ability to specify multiple Targets and scan them simultaneous
 $ python3 PortSucker.py -t 192.168.10.1,www.example.com,10.10.10.10 -p 1 100
 ```
 The example Shot are following
+![image](https://user-images.githubusercontent.com/85181215/141141058-eb822d65-87c6-4167-bdd4-131719ccef49.png)
 
-![image](https://user-images.githubusercontent.com/85181215/141140649-0cf02f09-f284-493d-b160-898380054ec1.png)
+<!--![image](https://user-images.githubusercontent.com/85181215/141140649-0cf02f09-f284-493d-b160-898380054ec1.png)-->
 <!-- ![image](https://user-images.githubusercontent.com/85181215/139909525-8f1fc4d5-2069-423c-825e-297bcfddd56b.png) -->
