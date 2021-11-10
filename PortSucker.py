@@ -5,6 +5,7 @@ from IPy import IP
 import argparse
 import time
 
+# < -------------------------------------- Get Arguments ------------------------------------------------------------>
 parser = argparse.ArgumentParser()
 parser.add_argument('--target', '-t', type=str, required=True, help="Enter the Target IP Address or URL.You can "
                                                                     "specify multiple target simultaneously but "
@@ -12,14 +13,22 @@ parser.add_argument('--target', '-t', type=str, required=True, help="Enter the T
 parser.add_argument('--port', '-p', type=int, required=True, help="Target Port Range to scan i.e '-p 1 100'", nargs=2)
 args = parser.parse_args()
 
+# ---------------------------------------------------------------------------------------------------------------------
+
+
+# <------------------------------------------- Arguments Checker ----------------------------------------------->
 if args.port[0] <= 0 or args.port[1] > 65535:
     print("[!!] Port Number Selection is Incorrect.\n"
           "[**] Port Number will not less then 0 and greater then 65535")
     sys.exit()
+# -----------------------------------------------------------------------------------------------------------------
 
+
+# <--------------------------------------------- PortSucker Banner ---------------------------------------------->
 f = open("banner.txt", "r")
 print(f.read())
 f.close()
+# ----------------------------------------------------------------------------------------------------------------
 
 st_time = time.time()
 
@@ -27,8 +36,6 @@ st_time = time.time()
 # <---------------Banner Grabbing----------
 def get_banner(s):
     return s.recv(1024)
-
-
 # <--------------------------------------->
 
 # <------Scanner ---------->
@@ -44,8 +51,6 @@ def scanner(address, scan_port):
             print(str(scan_port) + '\tOpen')
     except:
         pass
-
-
 # <---------------------------------------------->
 
 
@@ -60,9 +65,9 @@ def resolve_ip(ip):
         except:
             print("[!!] Name Resolution Failed. Check The Target ("+ip+")")
             sys.exit()
-
-
 # ------------------------------------------------------------------------
+
+
 # <-------------Multiple Target Scanner-----------------------------------
 def multi_scanner(targets):
     multi_ip = resolve_ip(targets)
@@ -70,11 +75,10 @@ def multi_scanner(targets):
     print('Ports\t' + 'Status\t' + 'service')
     for multi_port in range(range_port_1, range_port_2 + 1):
         scanner(multi_ip, multi_port)
-
-
 # ----------------------------------------------------------------------->
 
 
+# <--------------------------- Main Working ------------------------------->
 ipaddress = args.target
 range_port_1 = int(args.port[0])
 range_port_2 = int(args.port[1])
@@ -88,7 +92,8 @@ else:
     print('Ports\t' + 'Status\t' + 'service')
     for port in range(range_port_1, range_port_2 + 1):
         scanner(resolved_ip, port)
-
+# ----------------------------------------------------------------------------
+        
 ed_time = time.time()
 t_time = ed_time - st_time
 
