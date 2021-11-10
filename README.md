@@ -55,5 +55,7 @@ This also give us ability to specify multiple Targets and scan them simultaneous
 ```
 $ python3 PortSucker.py -t 192.168.10.1,www.example.com,10.10.10.10 -p 1 100
 ```
+The example Shot are following
 
+![image](https://user-images.githubusercontent.com/85181215/141140649-0cf02f09-f284-493d-b160-898380054ec1.png)
 <!-- ![image](https://user-images.githubusercontent.com/85181215/139909525-8f1fc4d5-2069-423c-825e-297bcfddd56b.png) -->
