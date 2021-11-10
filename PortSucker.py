@@ -2,23 +2,26 @@
 import socket
 import sys
 from IPy import IP
+import argparse
+import time
 
-usage = "usage: \n" \
-        "PortSucker.py [Target IP Address] [Starting Port Range] [Ending Port Range]\n" \
-        "PortSucker.py [Target IP1,TargetIP2,...] [Starting Port Range] [Ending Port Range]\n" \
-        "Examples:\n" \
-        "PortSucker.py 192.168.10.1 1 100\n" \
-        "PortSucker.py 192.168.10.1,www.example.com,10.10.10.1 1 100"
-if len(sys.argv) != 4:
-    print(usage)
-    sys.exit()
-elif len(sys.argv) >= 5:
-    print("[-] Invelid Parameters!")
-    print(usage)
+parser = argparse.ArgumentParser()
+parser.add_argument('--target', '-t', type=str, required=True, help="Enter the Target IP Address or URL.You can "
+                                                                    "specify multiple target simultaneously but "
+                                                                    "separate them by comma(,)")
+parser.add_argument('--port', '-p', type=int, required=True, help="Target Port Range to scan i.e '-p 1 100'", nargs=2)
+args = parser.parse_args()
 
-if int(sys.argv[2]) <= 0 or int(sys.argv[3]) > 65535:
-    print("[-] Port Number must be in Between 1-65535")
+if args.port[0] <= 0 or args.port[1] > 65535:
+    print("[!!] Port Number Selection is Incorrect.\n"
+          "[**] Port Number will not less then 0 and greater then 65535")
     sys.exit()
+
+f = open("banner.txt", "r")
+print(f.read())
+f.close()
+
+st_time = time.time()
 
 
 # <---------------Banner Grabbing----------
@@ -52,7 +55,11 @@ def resolve_ip(ip):
         IP(ip)
         return ip
     except ValueError:
-        return socket.gethostbyname(ip)
+        try:
+            return socket.gethostbyname(ip)
+        except:
+            print("[!!] Name Resolution Failed. Check The Target ("+ip+")")
+            sys.exit()
 
 
 # ------------------------------------------------------------------------
@@ -68,9 +75,9 @@ def multi_scanner(targets):
 # ----------------------------------------------------------------------->
 
 
-ipaddress = sys.argv[1]
-range_port_1 = int(sys.argv[2])
-range_port_2 = int(sys.argv[3])
+ipaddress = args.target
+range_port_1 = int(args.port[0])
+range_port_2 = int(args.port[1])
 
 if ',' in ipaddress:
     for ip_add in ipaddress.split(','):
@@ -81,3 +88,8 @@ else:
     print('Ports\t' + 'Status\t' + 'service')
     for port in range(range_port_1, range_port_2 + 1):
         scanner(resolved_ip, port)
+
+ed_time = time.time()
+t_time = ed_time - st_time
+
+print("Scan Complete in " + str(round(t_time)) + " sec")
