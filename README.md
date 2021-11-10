@@ -29,26 +29,31 @@ $ python3 portSucker.py
 ```
 If every thing write this will show you the syntax how to specify data to the the tool like follows
 
-![image](https://user-images.githubusercontent.com/85181215/139906965-c7390169-0ed3-4148-a4e6-b68ab3321607.png)
+![image](https://user-images.githubusercontent.com/85181215/141125817-21ad95c8-e28a-45f4-bd38-4b7b376f2a9c.png)
 
-There you will see They show us the following Syntax
+<!----![image](https://user-images.githubusercontent.com/85181215/139906965-c7390169-0ed3-4148-a4e6-b68ab3321607.png) -->
+
+if you need more help you can use the following switch with portsucker
 ```
-PortSucker.py [Target IP Address] [Starting Port Range No] [Ending Port Range No]
+$ python3 PortSucker.py -h
 ```
+
+This will show you full manual of PortSucker. How many switch they required etc.
+
 When we follow the syntax Properly we will able to scan any target we specify
 
 ## Examples
 
 ```
-$ python3 PortSucker.py 192.168.10.1 1 100
+$ python3 PortSucker.py -t 192.168.10.1 -p 1 100
 ```
 ```
-$ python3 PortSucker.py www.example.com 1 100
+$ python3 PortSucker.py -t www.example.com -p 1 100
 
 ```
-This also give us ability to specify multiple Targets and scan to do that we just have to separate other targets by **Comma(,) Like follows
+This also give us ability to specify multiple Targets and scan them simultaneously to do that we just have to separate other targets by **Comma(,) Like follows
 ```
-$ python3 PortSucker.py 192.168.10.1,www.example.com,10.10.10.10 1 100
+$ python3 PortSucker.py -t 192.168.10.1,www.example.com,10.10.10.10 -p 1 100
 ```
 
-![image](https://user-images.githubusercontent.com/85181215/139909525-8f1fc4d5-2069-423c-825e-297bcfddd56b.png)
+<!-- ![image](https://user-images.githubusercontent.com/85181215/139909525-8f1fc4d5-2069-423c-825e-297bcfddd56b.png) -->
