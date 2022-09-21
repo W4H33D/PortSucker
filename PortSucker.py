@@ -43,7 +43,7 @@ print(
     )
 # ----------------------------------------------------------------------------------------------------------------
 
-st_time = time.time()
+start_time = time.time()
 
 
 # <---------------Banner Grabbing----------
@@ -154,7 +154,7 @@ else:
         scanner(resolved_ip, port)
 # ----------------------------------------------------------------------------
         
-ed_time = time.time()
-total_time = end_time - sart_time
+end_time = time.time()
+total_time = end_time - start_time
 
-print("Scan Complete in " + str(round(t_time)) + " sec")
+print("Scan Complete in " + str(round(total_time)) + " sec")
