@@ -111,13 +111,6 @@ ed_time = time.time()
 t_time = ed_time - st_time
 
 print("Scan Complete in " + str(round(t_time)) + " sec")
-        try:
-            banner = get_banner(s)
-            print(str(scan_port) + '\t' + 'Open\t' + str(banner.decode().strip('\n')))
-        except:
-            print(str(scan_port) + '\tOpen')
-    except:
-        pass
 # <---------------------------------------------->
 
 
@@ -162,6 +155,6 @@ else:
 # ----------------------------------------------------------------------------
         
 ed_time = time.time()
-t_time = ed_time - st_time
+total_time = end_time - sart_time
 
 print("Scan Complete in " + str(round(t_time)) + " sec")
